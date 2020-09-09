@@ -103,9 +103,9 @@ def play(board)
   end
   if won?(board)
     winner_is = winner(board)
-    puts "Game Over. #{winner_is} is the winner."
+    puts "Congratulations #{winner_is}!"
     puts "Black Sabbath rules!"
   elsif draw?(board)
-    puts "Game over. It's a cat's eye."
+    puts "Cat's Game!"
   end
 end
