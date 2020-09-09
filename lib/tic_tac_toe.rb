@@ -100,12 +100,13 @@ end
 def play(board)
   until over?(board)
     turn(board)
+    current_player(board)
+  end
   if won?(board)
     winner_is = winner(board)
     puts "Game Over. #{winner_is} is the winner."
     puts "Black Sabbath rules!"
   elsif draw?(board)
     puts "Game over. It's a cat's eye."
-  end
   end
 end
